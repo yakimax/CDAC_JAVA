@@ -5,7 +5,7 @@ public class Main {
         int arr[] = { -5, -2, 5, 2, 4, 7, 1, 8, 0, -8 };
         int mainPtr = 0 ;
         int j = 0 ;
-        while( mainPtr < arr.length ){
+        while( mainPtr < arr.length && j < arr.length ){
             if(mainPtr%2 == 0 && arr[mainPtr] < 0 || mainPtr%2 != 0 && arr[mainPtr] > 0){
                 mainPtr++ ;
                 j = mainPtr ;
