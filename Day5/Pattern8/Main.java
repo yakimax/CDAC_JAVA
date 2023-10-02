@@ -5,6 +5,7 @@ public class Main {
         Scanner scn = new Scanner(System.in) ;
         int n = scn.nextInt() ;
         int star = 1 ;
+        scn.close();
         for( int i = 0 ; i < n*2-1 ; i++ ){
             int tempStar = star ;
             for(int j = 0 ; j < n ; j++){ 
