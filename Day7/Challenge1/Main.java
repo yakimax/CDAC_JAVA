@@ -8,7 +8,7 @@ class Main{
             arr[i] = scn.nextInt() ;
         }
         scn.close();
-        int i = 0 ;
+        // int i = 0 ;
         // int j = 
         // System.out.println() ;
     }
