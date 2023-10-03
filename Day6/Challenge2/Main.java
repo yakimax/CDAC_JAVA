@@ -21,7 +21,7 @@ public class Main {
         scn.close() ;
 
 
-        //considering to pointers pointing to (current element) and (next negative/positve) .
+        //considering two pointers pointing to (current element) and (next negative/positve) .
         int mainPtr = 0 ;
         int j = 0 ;
 
