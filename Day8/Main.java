@@ -1,4 +1,4 @@
-package Day8;
+package Day8 ;
 import Day8.package1.* ;
 import Day8.package1.subPackage.* ;
 import Day8.package2.Package2 ;
