@@ -14,10 +14,6 @@ class Helper{
     }
 }
 
-// class Helper2{
-//     int c ;
-//     int d ;    
-// }
 
 public class Main {
     public static void main(String[] args) {
