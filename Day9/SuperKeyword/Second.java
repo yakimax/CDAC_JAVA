@@ -15,4 +15,7 @@ public class Second extends First{
         System.out.println("Second Fun() b =" + " " + a + " " + b) ;
         super.fun() ;
     }
+    protected void print(){
+        System.out.println("Inside print fun Second class");
+    }
 }
