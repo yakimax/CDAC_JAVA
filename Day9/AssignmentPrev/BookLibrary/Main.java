@@ -27,7 +27,6 @@ public class Main {
                     scn.nextLine() ;
                     b.price = scn.nextInt() ;
                     try{
-                        // System.out.println("Retry creating booList Instance first");
                         bookList.add(b) ;
                     }catch(Exception e){
                         System.err.println(e);

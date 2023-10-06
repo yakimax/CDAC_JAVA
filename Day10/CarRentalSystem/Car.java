@@ -13,13 +13,15 @@ public class Car {
         this.rentalRate = 0 ;
         this.Availability = 'N' ;
     }
-    
-    Car(int carId ,String brandName ,int ModelNumber , int rentalRate , char Availability){
+    Car( String brandName ,int ModelNumber,int rentalRate ){
         this() ;
-        this.carId = carId ;
         this.brandName = brandName ;
         this.ModelNumber = ModelNumber ;
         this.rentalRate = rentalRate ;
+    }
+    Car(int carId ,String brandName ,int ModelNumber , int rentalRate , char Availability){
+        this(brandName,ModelNumber,rentalRate) ;
+        this.carId = carId ;
         this.Availability = Availability ;
     }
 
