@@ -1,4 +1,4 @@
-package Day10.Ucasting ;
+package Day10.Casting ;
 
 class First{
     int data ;
