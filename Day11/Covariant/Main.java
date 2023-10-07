@@ -1,5 +1,7 @@
- package Day11.Covariant ;
+package Day11.Covariant ;
 
+// we can override methods with non-premitive data types as return type of parents class into child class
+// but we cannot choose a return type which is not child of or has interited prev class .
 
 
 class First{
@@ -26,8 +28,8 @@ class Demo{
 }
 
 class Covariant extends Demo{
-    Second func(){
-        return new Second( ) ;
+    Third func(){
+        return new Third( ) ;
     }
 }
 
