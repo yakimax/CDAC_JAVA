@@ -14,6 +14,6 @@ class Second extends First{
 public class Main {
     public static void main(String[] args) {
         First f = new Second() ;
-        System.out.println(f.second) ;
+        // System.out.println(f.second) ;
     }
 }
