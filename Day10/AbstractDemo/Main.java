@@ -2,8 +2,8 @@ package Day10.AbstractDemo;
 
 abstract class Shape{
     double area ;
-    abstract void area() ;
-    void print(){
+    abstract void area() ;                      //abstract method -------> abstract methods cannot be defined 
+    void print(){                               //concrete method
         System.out.println(area) ;
     }
 }
