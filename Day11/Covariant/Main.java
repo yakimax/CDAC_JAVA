@@ -1,6 +1,6 @@
- package Day11.Covariant;
+ package Day11.Covariant ;
 
-import Day9.SuperKeyword.Third;
+
 
 class First{
 
@@ -26,8 +26,8 @@ class Demo{
 }
 
 class Covariant extends Demo{
-    Fourth func(){
-        return new Fourth( ) ;
+    Second func(){
+        return new Second( ) ;
     }
 }
 

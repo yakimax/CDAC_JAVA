@@ -20,7 +20,8 @@ public class Main {
         // s = (Second)f ;
         ((Second)f).anotherFun() ;
         // s.myFun() ;
-
+        
         System.out.println("Working successfully" ) ;
     }
+    
 }
