@@ -42,6 +42,6 @@ public class Main {
         // System.out.println(f.a) ;
         // System.out.println(f.b) ;
         f.print() ;
-        f.displayRecords() ;
+        // f.displayRecords() ;
     }
 }
