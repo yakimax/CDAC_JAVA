@@ -14,10 +14,19 @@ package Day12.Casting.Downcasting ;
 class First{
     int a ;
     int b ;
+    void print(){
+        System.out.println("First");
+    }
 }
 
 class Second extends First{
     int c ;
+    void print(){
+        System.out.println("Second");
+    }
+    void displayRecords(){
+        System.out.println("Display Second");
+    }
 }
 
 public class Main{
@@ -27,5 +36,7 @@ public class Main{
         System.out.println(s.a) ;
         System.out.println(s.b) ;
         System.out.println(s.c) ;
+        s.print();
+        s.displayRecords();
     }
 }

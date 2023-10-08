@@ -11,17 +11,27 @@ package Day12.Casting.Upcasting ;
 // p.a                  // Accessible
 // p.b                  // Accessible 
 // p.c                  // Not Accessible (parent cannot access child class members)
-// even after upcasting parent class cannot access child class members 
-
+// please observe oveririding properties in upcasting
+// cant access data members of child class in upcasting
+// but we can acces overrided method of child class (if no overrrided we can call parent class methods)
 
 class First{
     int a ;
     int b ;
+    void print(){
+        System.out.println("First");
+    }
 }
 
 
 class Second extends First{
     int c ;
+    void print(){
+        System.out.println("Second") ;
+    }
+    void displayRecords(){
+        System.out.println("Child DisplayRecord") ;
+    }
 }
 
 
@@ -29,7 +39,9 @@ class Second extends First{
 public class Main {
     public static void main(String[] args) {
         First f = new Second() ;
-        System.out.println(f.a) ;
-        System.out.println(f.b) ;
+        // System.out.println(f.a) ;
+        // System.out.println(f.b) ;
+        f.print() ;
+        f.displayRecords() ;
     }
 }
