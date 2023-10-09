@@ -1,5 +1,7 @@
 // package Day11.Casting ;
 
+import Day13.GarbageCollection.First;
+
 class First{
     void myFun(){
         System.out.println("First myFun" ) ;
