@@ -8,6 +8,8 @@ package Day12.Casting.Downcasting ;
 // c.b ;                    //parent class data members Accessible
 // c.c ;                    //child class data members Also Accessible
 // both child class members are available to downcasted reference
+// it is nessacary to uncast if you wan to achive downcasting
+// without specifying(Child) compile will give you ClassCastError
 
 
 

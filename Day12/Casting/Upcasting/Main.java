@@ -1,5 +1,6 @@
 package Day12.Casting.Upcasting ;
 
+
 // Upcasting 
 // Upcasting is the process of type casting Child class object to parent class Object 
 // we acn achieve upcasting as follow :
@@ -14,6 +15,8 @@ package Day12.Casting.Upcasting ;
 // please observe oveririding properties in upcasting
 // cant access data members of child class in upcasting
 // but we can acces overrided method of child class (if no overrrided we can call parent class methods)
+
+
 
 class First{
     int a ;
@@ -41,7 +44,7 @@ public class Main {
         First f = new Second() ;
         // System.out.println(f.a) ;
         // System.out.println(f.b) ;
-        f.print() ;
+        System.out.println(f.c) ;
         // f.displayRecords() ;
     }
 }
