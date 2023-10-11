@@ -6,4 +6,3 @@ public abstract class MenuItem {
     public double itemPrice ;
     public abstract void displayItemDetails () ;
 }
-
