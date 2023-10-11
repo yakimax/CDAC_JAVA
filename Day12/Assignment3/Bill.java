@@ -7,12 +7,13 @@ public class Bill {
     static final double DISCOUNT_RATE = 10 ;
     static final double SPECIAL_OFFER_DISCOUNT = 25 ;
     void calculateTotalBill(){
-
+        double totalAmount = amount + (amount * (TAX_RATE / 100));
+        amount = totalAmount ;
     }
     void applyDiscount(){
-        
+        amount = amount - (amount * (DISCOUNT_RATE / 100));
     }
     void displayBill(){
-        
+        System.out.println() ;
     }
 }

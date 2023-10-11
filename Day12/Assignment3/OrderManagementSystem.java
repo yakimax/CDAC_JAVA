@@ -5,7 +5,7 @@ import Day12.Assignment3.* ;
 public class OrderManagementSystem {
     MenuItem[] menuItems ;
     MenuItem[] customerOrder ;
-    static int index = 0 ;
+    int index = 0 ;
     void viewMenu(){
         for(int i = 0 ; i < menuItems.length ; i++){
             System.out.println(i + " . " + menuItems[i]) ;
