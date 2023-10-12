@@ -15,6 +15,6 @@ public class Main {
         String str1 = "Hello world" ;
         char [] ch = new char[5] ;
         str1.getChars(0, 5, ch, 0);
-        System.out.println(ch) ;
+        System.out.println("get char : " +ch) ;
     }
 }
