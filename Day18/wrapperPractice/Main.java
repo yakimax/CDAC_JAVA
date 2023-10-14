@@ -1,15 +1,15 @@
 package Day18.wrapperPractice ;
 
 
-class IntegerWrapper<T>{
-    T a ;
-    T b ;
-    IntegerWrapper(T a, T b){
-        this.a = a ;
-        this.b = b ;
-    }
+// class IntegerWrapper<T>{
+//     T a ;
+//     T b ;
+//     IntegerWrapper(T a, T b){
+//         this.a = a ;
+//         this.b = b ;
+//     }
 
-}
+// }
 
 
 public class Main {
