@@ -5,8 +5,8 @@ package Day19.SynchronizedKeyword ;
 // synchronized block
 // synchronized( common object for locking ){
 
-//}
-//sunchronized void fun(){}
+// }
+// sunchronized void fun(){}
 
 
 class PrintString{
@@ -46,6 +46,9 @@ class MyThread implements Runnable{
 
 
 public class Main {
+      static public void   fun(){
+
+    }
     public static void main(String[] args) {
         PrintString p = new PrintString() ;
         MyThread m1 = new MyThread("array",p) ;
