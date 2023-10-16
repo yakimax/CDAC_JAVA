@@ -1,6 +1,6 @@
 package Day20.Assignment4 ;
 
-class RetrieveData{
+class RetrieveData {
     
 }
 
