@@ -15,8 +15,24 @@ package Day21.GenericAndNonGenerics;
 // 	} 
 // }
 
+class MyGenDemo<T> {
+	T a ;
+	MyGenDemo(){
+		this.a = null ;
+	}
+
+	void myFun(MyGenDemo<T> obj){
+		System.out.println(obj) ;
+	}
+
+
+}
+
 public class MYgen {
     public static void main(String[] args) {
-        
+        MyGenDemo d = new MyGenDemo() ;
+        MyGenDemo d1 = new MyGenDemo() ;
+		d.myFun(10) ;
+		d.myFun(d1) ;
     }
 }
