@@ -42,6 +42,16 @@ class Truck extends Vehicle{
     
 }
 
+// 2
+// 1 
+// 4 
+// 200 
+// 4
+// 2
+// 4
+// 100
+// 3000 
+
 
 public class Solution {
     public static void display(Vehicle arr[]){
@@ -51,7 +61,7 @@ public class Solution {
             }else{
                 System.out.print(v.speed +" "+ v.wheels + " " ) ;
             }
-            System.out.print(v.speed +" "+ v.wheels + " " ) ;
+            System.out.println( ) ;
         }
     }
     
@@ -73,8 +83,9 @@ public class Solution {
                 int loadLimit = scn.nextInt() ;
                veh[i] = new Truck(wheels,speed,loadLimit) ; 
             }
-            display(veh) ;
-        }
-        
+        } 
+        display(veh) ;
+        Arrays.sort(veh);
+        display(veh) ;
     }
 }
