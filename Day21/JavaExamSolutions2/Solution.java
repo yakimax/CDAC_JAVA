@@ -46,7 +46,6 @@ class Bank{
         throw new AccountNotFoundException() ;
     }
     void transfer( int fromAccount , int toAccount , double amount ) throws AccountNotFoundException ,NegativeAmountException {
-       
        try{
            int indexFrom = searchAcc(fromAccount) ;
            int indexTo = searchAcc(toAccount) ;
@@ -66,7 +65,6 @@ class Bank{
        }
        
     }
-    
 }
 
 class Account{
@@ -114,7 +112,20 @@ public class Solution {
         Bank bank = new Bank() ; 
         bank.setAccount(account);
         display(account);
-        bank.transfer(3, 1, 1000);
+        bank.transfer(3, 1, 3000) ;
         display(account);
+// 4
+// 1
+// ramesh
+// 1000
+// 2
+// suresh
+// 2000
+// 3
+// dharmesh
+// 3000
+// 4
+// raju
+// 4000
     }
 }
