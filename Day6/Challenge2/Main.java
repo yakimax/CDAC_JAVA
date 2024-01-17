@@ -9,16 +9,16 @@ public class Main {
     }
     
     public static void main(String[] args) {
-        // int arr[] = { -5, -2, 5, 2, 4, 7, 1, 8, 0, -8 } ;
+        int arr[] = { -12, 11, -13, -5, 6, -7, 5, -3, -6} ;
 
         //user Input
-        Scanner scn = new Scanner(System.in) ;
-        int n = scn.nextInt() ;
-        int arr[] = new int[n] ;
-        for( int i = 0 ; i < n ; i++ ){
-            arr[i] = scn.nextInt() ;
-        }
-        scn.close() ;
+        // Scanner scn = new Scanner(System.in) ;
+        // int n = scn.nextInt() ;
+        // int arr[] = new int[n] ;
+        // for( int i = 0 ; i < n ; i++ ){
+        //     arr[i] = scn.nextInt() ;
+        // }
+        // scn.close() ;
 
 
         //considering two pointers pointing to (current element) and (next negative/positve) .
@@ -28,23 +28,15 @@ public class Main {
 
         //while we exhaust all negatives or positives in the array .
         while( mainPtr < arr.length && j < arr.length ){
-            if(mainPtr%2 == 0 && arr[mainPtr] < 0 || mainPtr%2 != 0 && arr[mainPtr] > 0){
+            if( arr[mainPtr] > 0 && arr[j] < 0){ 
+                    swap(arr,mainPtr,j) ; 
+            }else if(arr[mainPtr] < 0 ){
                 mainPtr++ ;
                 j = mainPtr ;
             }
-            else if (mainPtr%2 == 0 && arr[mainPtr] > 0 ){
-                if( arr[j] < 0 ){
-                    swap(arr,mainPtr,j) ;
-                }else{
-                    j++ ;
-                }
-            }else if(mainPtr%2 != 0 && arr[mainPtr] < 0){
-                if(arr[j] > 0){
-                    swap(arr,mainPtr,j) ;
-                }else{
-                    j++ ;
-                }
-            }
+            else if  ( arr[mainPtr] > 0 ){ 
+                j++ ;
+            } 
         }
 
         //Printing/display the resultant array .
@@ -54,3 +46,4 @@ public class Main {
 
     }
 }
+// -12, 11, -13, -5, 6, -7, 5, -3, -6
